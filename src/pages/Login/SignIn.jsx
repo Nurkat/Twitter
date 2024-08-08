@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import TwitterIcon from '../../assets/images/icons'
+import {TwitterIcon} from '../../assets/images/icons'
 import { Link } from 'react-router-dom'
 import  Input  from '../../components/input'
 import Button from '../../components/button'
@@ -12,8 +12,8 @@ function SignIn() {
   const handleSubitLogin = (e)=>{
     e.preventDefault()
     const data = {
-      login:e.target.login.value,
-      password:e.target.password.value
+      login:e.target.login.value.trim(),
+      password:e.target.password.value.trim()
     }
     if (data.login =="nurkat" && data.password =="123"){
       setToken(data)
