@@ -91,8 +91,8 @@ function Navbar() {
       <CustomModal isOpenModal={OpenModal} setIsOpenModal={setOpenModal}>
         <h2 className='font-bold text-center text-[35px] mb-[30px] '>Do you want log out</h2>
       <div className='flex items-center justify-center space-x-5 px-[20px] '>
-        <Button onClick={()=> setOpenModal(false)} width={200}  title={"Yes"} extraStyle={"bg-red-600" } />
-        <Button onClick={SignOut}  width={200} title={"No"} extraStyle={"bg-green-600"}/>
+        <Button onClick={()=> setOpenModal(false)} width={200}  title={"No"} extraStyle={"bg-red-600" } />
+        <Button onClick={SignOut}  width={200} title={"Yes"} extraStyle={"bg-green-600"}/>
 
       </div>
       </CustomModal>

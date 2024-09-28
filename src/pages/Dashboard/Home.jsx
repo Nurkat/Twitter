@@ -9,10 +9,6 @@ import ShuhratbekImg from '../../assets/images/shuhratbekImg.png'
 
 
 
-
-
-
-
 function Home() {
   const {postList, setPostList} = useContext(Context)
   const token = JSON.parse(localStorage.getItem("token"))
